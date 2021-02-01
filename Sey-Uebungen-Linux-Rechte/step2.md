@@ -18,6 +18,6 @@ zu wie angegeben.
 
 ## Überprüfen
 Sie können prüfen, in welchen Benutzergruppen ein Linux-Benutzer ist,
-indem Sie `groups adam`{{execute}} (mit dem jeweiligen Benutzernamen
-- oder, wenn Sie keinen Benutzernamen angeben, für den aktuell eingeloggten
-Benutzer) ausführen.
+indem Sie `groups adam`{{execute}} ausführen. Hier können Sie natürlich
+auch einen anderen Benutzernamen angeben - wenn Sie keinen Benutzer angeben, 
+werden die Gruppen ausgegeben, in denen der aktuelle Benutzer Mitglied ist.
