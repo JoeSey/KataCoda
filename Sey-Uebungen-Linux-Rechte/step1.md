@@ -1,5 +1,5 @@
 # Übungen Benutzer in Linux
-Heute soll ein kleines Szenario in Linux erstellt werden: vir Benutzer mit einem 
+Heute soll ein kleines Szenario in Linux erstellt werden: vier Benutzer mit einem 
 gemeinsamen Verzeichnis, in dem unterschiedliche Benutzergruppen unterschiedliche
 Berechtigungen haben sollen.
 
@@ -16,3 +16,6 @@ man dazu ein neues Terminal auf (mit dem weißen Plus-Symbol neben der Überschr
 und überprüfen, welchen Account man benutzt mit einem
 `whoami`{{execute}}
 
+### Restliche Benutzer
+Legen Sie nun die Benutzer berta, charlie und donald an. Danach geht es weiter mit
+den Benutzergruppen:
