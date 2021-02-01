@@ -5,3 +5,6 @@ die Berechtigungen User/group/others noch gezielter einsetzen.
 
 ### Her(t)zlichen Glückwunsch!
 J. Seyfried
+
+P.S.: Sie können dieses Fenster mit dem kleinen x oben rechts schließen und im 
+Browser-Linux weiterarbeiten!
