@@ -15,3 +15,9 @@ Distributionen gibt:
 
 Legen Sie nun die restlichen Gruppen an und weisen Sie die Benutzer
 zu wie angegeben.
+
+## Überprüfen
+Sie können prüfen, in welchen Benutzergruppen ein Linux-Benutzer ist,
+indem Sie `groups adam`{{execute}} (mit dem jeweiligen Benutzernamen
+- oder, wenn Sie keinen Benutzernamen angeben, für den aktuell eingeloggten
+Benutzer) ausführen.
