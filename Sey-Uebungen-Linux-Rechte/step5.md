@@ -11,8 +11,7 @@ drwxrwxr-x 2 root anwalt 4096 Feb  1 09:54 vertraege`
 In der abschließenden Aufgabe machen wir Unfug mit dem 
 austausch-Ordner.
 `su adam
-echo "Der Azubi donald bekommt ein Anfangsgehalt von 500€ monatlich" \
-> /home/kanzlei/austausch/gehalt.txt
+echo "Der Azubi donald bekommt ein Anfangsgehalt von 500€ monatlich" > /home/kanzlei/austausch/gehalt.txt
 exit
 su donald
 cd  /home/kanzlei/austausch/`{{execute}}
