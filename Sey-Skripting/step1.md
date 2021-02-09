@@ -32,7 +32,7 @@ Oder übersichtlicher (?) als Einzeiler: ``for i in 2 4 6 8 10; do echo Hallo $i
 Der zweite Teil ist komplizierter. Wir tasten uns heran: Was macht ``seq 19``{{execute}}?
 Jetzt noch die Konstruktion ``$( ... )``. Versuchen Sie einmal ein 
 ``mkdir $(seq 5)``{{execute}}. Was passiert? Schaffen Sie es, nicht nur die Verzeichnisse
-1 bis 5 anzulegen, sondern die Verzeichnisse ``test-1, test2, test-3, test-4`` und ``test-5``?
+1 bis 5 anzulegen, sondern die Verzeichnisse ``test-1, test-2, test-3, test-4`` und ``test-5``?
 
 Führen Sie nun das Skript ``create_users`` aus. Was müssen Sie tun?
 
