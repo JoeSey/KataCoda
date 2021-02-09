@@ -10,22 +10,24 @@ Um sich die Situation anschauen zu können, müssen Sie sich zunächst die Verze
 holen.
 
 ## Beispiel-Dateien laden
-Dies machen Sie mit ``git clone ``{execute}. Untersuchen Sie die Verzeichnisse mit
-einem ``tree``{execute}.
+Dies machen Sie mit ``wget https://gitlab.hhs.karlsruhe.de/Seyfried/sys-skripting1/-/archive/master/sys-skripting1-master.tar``{{execute}}.
+Ein ``.tar``-File ist wie eine Zip-Datei, in diesem Beispiel jedoch nicht gepackt. Wir packen das aus mit einem
+``tar xf sys-skripting1-master.tar``{{execute}}. Untersuchen Sie die Verzeichnisse mit einem ``tree``{{execute}}.
 
-## Benutzer anlegen
-Benutzer legen wir an mit `adduser`. Es sollen die Benutzer adam, berta, charlie
-und donald angelegt werden. Dies machen wir mit
-`adduser adam`{{execute}}
-...danach muss ein Passwort vergeben werden und einige zusätzliche Informationen.
+## User-Skript analysieren
+Die erforderlichen Benutzer wurden eigentlich von unserem Hosting-System generiert. In diesem
+Beispiel lassen wir sie per Skript erzeugen. Schauen Sie sich dazu die Datei create_users an 
+mit einem ``cat clients/create_users``{{execute}}. Was macht die erste for-Schleife?
 
-Diese Benutzer kann man, sobald sie angelegt sind, gleich testen: Am besten macht
-man dazu ein neues Terminal auf (mit dem weißen Plus-Symbol neben der Überschrift
-"Terminal"). Dann kann man in den neuen Account wechseln mit
-`su adam`{{execute}}
-und überprüfen, welchen Account man benutzt mit einem
-`whoami`{{execute}}
+Versuchen Sie es selber einmal:
+``for i in 2 4 6 8 10
+do
+  echo $i
+done``{{copy}}
 
-### Restliche Benutzer
-Legen Sie nun die Benutzer berta, charlie und donald an. Danach geht es weiter mit
-den Benutzergruppen:
+Der zweite Teil ist komplizierter. Wir tasten uns heran: Was macht ``seq 19``{{execute}}?
+Jetzt noch die Konstruktion ``$( ... )``. Versuchen Sie einmal ein 
+``mkdir test-$(seq 5)``{{execute}}. Was passiert?
+
+## Weiter geht's.
+Wir haben nun die erforderlichen Benutzer und Verzeichnisse. Weiter geht es im nächsten Schritt.
