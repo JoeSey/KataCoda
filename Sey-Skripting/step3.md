@@ -1,10 +1,8 @@
-## Verzeichnisse erstellen
-Um das geforderte Szenario testen zu können, brauchen wir eine Verzeichnisstruktur.
-Legen Sie diese unter `/home` an, indem Sie beginnen mit:
-`mkdir /home/kanzlei
-cd  /home/kanzlei
-mkdir austausch`{{execute}}
-...nun fehlen dort nur noch die Verzeichnisse `briefe`, `chefsachen` und `vertraege`.
+## Verzeichnisse wechseln
+In jedem Schritt soll nun in das client-Verzeichnis hineingewechselt werden und
+anschließend wieder hinaus.
 
-Nun sollten Sie den auf dem Arbeitblatt gezeigten Verzeichnisbaum haben, wenn Sie
-`tree /home/kanzlei`{{execute}} eingeben!
+Geben Sie in jedem Verzeichnis einfach mit ``pwd`` das aktuelle Verzeichnis aus.
+
+Versuchen Sie es einmal, die Lösung gibt es auf der nächsten Seite.
+

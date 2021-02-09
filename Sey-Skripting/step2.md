@@ -21,13 +21,17 @@ wechseln. Und: das Skript abspeichern, bevor Sie es ausführen!)
 
 Was sollte in der ersten Zeile Ihres Skripts stehen?
 
+(Wir sind jetzt im Verzeichnis sys-skripting1-master. Falls Sie sich "verlaufen" haben,
+machen Sie vorher bitte ein ``cd /root/sys-skripting1-master``{{execute}}).
+
+
 Schreiben Sie zunächst eine Schleife, die über die client-Verzeichnisse iteriert:
 
 ``
-for dir in *
+for dir in clients/*
 do
-  echo "Verzeichnis $v"
+  echo "Verzeichnis $dir"
 done
-``
+``{{copy}}
 
 Speichern und Ausführen, dann geht es weiter.

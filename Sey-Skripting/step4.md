@@ -1,34 +1,21 @@
-## Berechtigungen vergeben
-Nun wird es "ernst". Wir beginnen mit dem Verzeichnis `vertraege`.
-Hier sollen die Anwälte Vollzugriff haben, alle anderen Lesezugriff. 
-Berchtigungsvergaben unter Unix bestehen immer aus zwei Schritten:
+## Verzeichnisse wechseln
+So könnte Ihr Skript jetzt aussehen:
 
-### Benutzer/Gruppen zuweisen
-Als erstes ändern wir die Eigentümer-Gruppe des Verzeichnisses auf *anwalt*.
-Der Zustand vorher ist:
+``
+for dir in clients/*
+do
+  cd $dir
+  pwd
+  cd ../..
+done``{{copy}}
 
-`ls -l /home/kanzlei`{{execute}}
+### Eigentümer ändern
+Als letztes muss noch eine Schleife über die jeweiligen web-Verzeichnisse 
+laufen. Die Eigentümer einer Datei ändern wir unter Unix mit
 
-...nun soll der Gruppen-Eigentümer geändert werden auf *anwalt*. Dies geschieht
-zum Beispiel mit diesem Befehl:
+``chown web1:client1 index.html``{{copy}}
 
-`chgrp anwalt vertraege`{{execute}}
+Anstatt dem ``pwd``im letzten Schritt muss jetzt eine weitere Schleife über 
+die ``web*`` im aktuellen Verzeichnis kommen und darin der chown ausgeführt werden.
 
-Was ist passiert?
-
-`ls -l /home/kanzlei`{{execute}}
-
-Jetzt fehlt für den neuen Eigentümer noch das erweiterte Schreibrecht. Dies setzen
-wir mit
-
-`chmod g+w vertraege`{{execute}}
-
-...und vergleichen genau den Vorher- und Nachher-Zustand:
-
-`ls -l /home/kanzlei`{{execute}}
-
-Versuchen Sie es! Loggen Sie sich auf einem neuen Terminal als einer der beiden
-Anwalts-Accounts ein (`su adam`) und legen Sie eine neue Datei an. Zum Beispiel mit 
-`echo "Das ist wichtig" > /home/kanzlei/vertraege/mein.txt`{{execute}}.
-
-Zurück im ersten Terminal kümmern Sie sich um die anderen Verzeichnisse.
+Tauschen Sie sich untereinander aus!
