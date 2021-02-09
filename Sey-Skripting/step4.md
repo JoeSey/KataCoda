@@ -2,7 +2,7 @@
 So könnte Ihr Skript jetzt aussehen:
 
 ``
-cd clients
+cd /root/sys-skripting1-master/clients
 for dir in *
 do
   cd $dir
