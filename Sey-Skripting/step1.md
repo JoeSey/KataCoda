@@ -16,18 +16,25 @@ Ein ``.tar``-File ist wie eine Zip-Datei, in diesem Beispiel jedoch nicht gepack
 
 ## User-Skript analysieren
 Die erforderlichen Benutzer wurden eigentlich von unserem Hosting-System generiert. In diesem
-Beispiel lassen wir sie per Skript erzeugen. Schauen Sie sich dazu die Datei create_users an 
-mit einem ``cat clients/create_users``{{execute}}. Was macht die erste for-Schleife?
+Beispiel lassen wir sie per Skript erzeugen. Wechseln Sie ins Verzeichnis sys-skripting1-master
+und schauen Sie sich dazu die Datei create_users an mit einem ``cat clients/create_users``{{execute}}. 
+Was macht die erste for-Schleife?
 
 Versuchen Sie es selber einmal:
+
 ``for i in 2 4 6 8 10
 do
-  echo $i
+  echo Hallo $i
 done``{{copy}}
+
+Oder übersichtlicher (?) als Einzeiler: ``for i in 2 4 6 8 10; do echo Hallo $i; done``{{copy}}.
 
 Der zweite Teil ist komplizierter. Wir tasten uns heran: Was macht ``seq 19``{{execute}}?
 Jetzt noch die Konstruktion ``$( ... )``. Versuchen Sie einmal ein 
-``mkdir test-$(seq 5)``{{execute}}. Was passiert?
+``mkdir $(seq 5)``{{execute}}. Was passiert? Schaffen Sie es, nicht nur die Verzeichnisse
+1 bis 5 anzulegen, sondern die Verzeichnisse ``test-1, test2, test-3, test-4`` und ``test-5``?
+
+Führen Sie nun das Skript ``create_users`` aus. Was müssen Sie tun?
 
 ## Weiter geht's.
 Wir haben nun die erforderlichen Benutzer und Verzeichnisse. Weiter geht es im nächsten Schritt.
