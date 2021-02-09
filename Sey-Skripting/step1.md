@@ -10,7 +10,7 @@ Um sich die Situation anschauen zu können, müssen Sie sich zunächst die Verze
 holen.
 
 ## Beispiel-Dateien laden
-Dies machen Sie mit ``wget https://gitlab.hhs.karlsruhe.de/Seyfried/sys-skripting1/-/archive/master/sys-skripting1-master.tar``{{execute}}.
+Dies machen Sie mit ``wget https://gitlab.hhs.karlsruhe.de/Seyfried/sys-skripting1/-/archive/master/sys-skripting1-master.tar``{{execute}}
 Ein ``.tar``-File ist wie eine Zip-Datei, in diesem Beispiel jedoch nicht gepackt. Wir packen das aus mit einem
 ``tar xf sys-skripting1-master.tar``{{execute}}. Untersuchen Sie die Verzeichnisse mit einem ``tree``{{execute}}.
 
