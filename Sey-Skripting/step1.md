@@ -16,7 +16,7 @@ Ein ``.tar``-File ist wie eine Zip-Datei, in diesem Beispiel jedoch nicht gepack
 
 ## User-Skript analysieren
 Die erforderlichen Benutzer wurden eigentlich von unserem Hosting-System generiert. In diesem
-Beispiel lassen wir sie per Skript erzeugen. Wechseln Sie ins Verzeichnis sys-skripting1-master
+Beispiel lassen wir sie per Skript erzeugen. Wechseln Sie ins Verzeichnis ``sys-skripting1-master``{{copy}}
 und schauen Sie sich dazu die Datei create_users an mit einem ``cat clients/create_users``{{execute}}. 
 Was macht die erste for-Schleife?
 
