@@ -28,7 +28,8 @@ machen Sie vorher bitte ein ``cd /root/sys-skripting1-master``{{execute}}).
 Schreiben Sie zunächst eine Schleife, die über die client-Verzeichnisse iteriert:
 
 ``
-for dir in clients/*
+cd /root/sys-skripting1-master/clients
+for dir in *
 do
   echo "Verzeichnis $dir"
 done

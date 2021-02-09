@@ -2,11 +2,12 @@
 So könnte Ihr Skript jetzt aussehen:
 
 ``
-for dir in clients/*
+cd clients
+for dir in *
 do
   cd $dir
   pwd
-  cd ../..
+  cd ..
 done``{{copy}}
 
 *Wichtig:* bevor Sie dies ausführen, schieben Sie create_users aus dem clients-Verzeichnis.
