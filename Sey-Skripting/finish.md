@@ -1,7 +1,7 @@
-Nun wissen Sie, wie Berechtigungen unter Unix/Linux funkionieren.
-In diesem Beispiel haben wir eigentlich nur Gruppen-Berechtigungen
-verwendet, in weiteren Übungen kann man dies noch verfeinern und 
-die Berechtigungen User/group/others noch gezielter einsetzen.
+Sie haben gerade ein Praxis-Beispiel absolviert, wo einem Skripting
+sehr helfen kann. Stellen Sie sich vor, es wären 250 Kunden mit insgesamt
+3287 Web-Präsenzen gewesen, von denen manche gelöscht sind und manche vorhanden.
+Von Hand eine Aufgabe von mehreren Tagen...
 
 ### Her(t)zlichen Glückwunsch!
 J. Seyfried
