@@ -1,38 +1,26 @@
-## Das Ziel
-Was wir wollen, ist das folgende:
+## Aufgabe 2 - Vergleiche
+Hier sollen Sie Zahlen vergleichen. Versuchen Sie einmal diese Zeile auszuführen:
 
-Jedes Verzeichnis im Verzeichnisbaum soll in der Gruppe ``clientx`` gehören
-und jede html-Datei dem Benutzer ``weby``, mit den passenden Zahlen x und y.
+``if [ 3 -lt 5 ]; then echo "drei ist kleiner als fuenf!"; fi``{{execute}}
 
-Beispiel:
+Hierbei steht ``-lt`` für *less than*.
 
-``
-drwxr-x--- 13 web19 client9 4096 Jan 24 14:59 index.html
-``
+Wenn Sie wissen wollen, wie dieses komische if in der Shell funktioniert, versuchen Sie
+einmal das hier:
 
-...im Verzeichnis clients/client9/web19. Von Hand ist das echt stressig. 
-Also schreiben wir ein kleines Skript.
+``help test``{{execute}}
 
-## Editor anwerfen!
-Starten Sie Ihren Lieblingseditor. Oder verwenden Sie ``nano fix_users``{{execute}}.
-Wenn Sie wollen, können Sie oben über dem Terminal-Bereich auf das "+" Icon klicken
-und in einem zweiten Fenster das Skript ausprobieren (Achtung: ins gleiche Verzeichnis
-wechseln. Und: das Skript abspeichern, bevor Sie es ausführen!)
+...das wirft Ihnen alle möglichen Tests, also if-Abfragen aus. Jetzt müssen
+Sie sich nur noch daran erinnern, dass in ``$1`` der erste Parameter steht. Also, 
+wenn Sie dieses Skript hier:
 
-Was sollte in der ersten Zeile Ihres Skripts stehen?
-
-(Wir sind jetzt im Verzeichnis sys-skripting1-master. Falls Sie sich "verlaufen" haben,
-machen Sie vorher bitte ein ``cd /root/sys-skripting1-master``{{execute}}).
-
-
-Schreiben Sie zunächst eine Schleife, die über die client-Verzeichnisse iteriert:
-
-``
-cd /root/sys-skripting1-master/clients
-for dir in *
-do
-  echo "Verzeichnis $dir"
-done
+``#!/bin/bash
+echo "Mein erster Parameter ist: $1"
 ``{{copy}}
 
-Speichern und Ausführen, dann geht es weiter.
+...aufrufen mit ``./skript blah blubb``, dann ist das Ergebnis ``blah``.
+
+Los geht's!
+
+Für die Teilaugbane b) sollten Sie noch wissen, dass in der Spezial-Variable ``$#`` die Anzahl
+der übergebenen Parameter steckt.

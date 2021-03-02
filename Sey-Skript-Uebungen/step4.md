@@ -1,28 +1,15 @@
-## Verzeichnisse wechseln
-So könnte Ihr Skript jetzt aussehen:
+## Aufgabe 4 - Ausgabe und Parameter
+Diskutieren Sie mögliche Probleme und Ansätze im Sys6-Kanal. Hier ist der Mailtext
+zum schnellen herauskopieren:
 
-``
-cd /root/sys-skripting1-master/clients
-for dir in *
-do
-  cd $dir
-  pwd
-  cd ..
-done``{{copy}}
+``Lieber Hans,
+lange nichts von
+Dir gehört. Geht
+es Dir gut?
+Melde Dich mal
+wieder!
+Liebe Grüße Klaus.``{{copy}}
 
-*Wichtig:* bevor Sie dies ausführen, schieben Sie create_users aus dem clients-Verzeichnis.
-Sie können dies mit ``mv /root/sys-skripting1-master/clients/create_users ~``{{execute}}
-machen. Sonst landen Sie anschließend im Verzeichnis / 
+*Hans* und *Klaus* sollten wohl durch Variablen ersetzt werden.
 
-(warum?!)
-
-### Eigentümer ändern
-Als letztes muss noch eine Schleife über die jeweiligen web-Verzeichnisse 
-laufen. Die Eigentümer einer Datei ändern wir unter Unix mit
-
-``chown web1:client1 index.html``{{copy}}
-
-Anstatt dem ``pwd``im letzten Schritt muss jetzt eine weitere Schleife über 
-die ``web*`` im aktuellen Verzeichnis kommen und darin der chown ausgeführt werden.
-
-Tauschen Sie sich untereinander aus!
+Anrede-Problem: Zweite Seite der Aufgabenstellung!

@@ -1,9 +1,30 @@
-## Weitere Beispiele
-Herr Seyfried teilt noch ein Blatt mit weiteren Beispiel-Skripten aus, die Sie hier ausprobieren
-können. Darum steht hier nichts.
+## Zusatzaufgabe
+Diese Aufgabe ist nur für die Linux-Profis. Sie ist auf dem Aufgabenblatt auf der zweiten Seite.
 
-Wechseln Sie aus den Unterverzeichnissen heraus mit einem ``cd``{{execute}} und programmieren
-Sie drauflos!
+Beispiel:
+`` bulkmail Klaus Hans Martin Fritz```
 
-Und nein, hier könnte nicht Ihre Werbung stehen. ;-)
+*Klaus* ist der Absender. Alles, was danach kommt, sind die Empfänger.
 
+Die Ausgabe soll dann so aussehen:
+
+``
+Lieber Hans,
+lange nichts von Dir
+gehört. Geht es Dir gut?
+Melde Dich mal wieder!
+Liebe Grüße
+Klaus.
+----nächste Mail---- 
+Lieber Martin,
+lange nichts von Dir
+gehört. Geht es Dir gut?
+Melde Dich mal wieder!
+Liebe Grüße
+Klaus.
+----nächste Mail---- 
+Lieber Fritz,
+...
+``
+
+Anrede-Problem: knifflig, aber lösbar.
