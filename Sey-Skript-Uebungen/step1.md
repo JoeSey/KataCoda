@@ -15,7 +15,9 @@ Wenn Sie ausprobieren wollen, ob es nun geht:
 
 ``nano aufgabe1``{{execute}}
 
- Was fehlt jetzt noch? Denken Sie an chmod und Punkt Slash...
+Kopieren Sie das fehlerhafte Skript dort rein, editieren Sie die Fehler raus und führen Sie das Skript aus.
+
+Was fehlt jetzt noch? Denken Sie an chmod und Punkt Slash...
 
 ## Weiter geht's.
 Wenn das Skript funktioniert, schnell weiter zur Aufgabe 2!

@@ -1,7 +1,4 @@
-Sie haben gerade ein Praxis-Beispiel absolviert, wo einem Skripting
-sehr helfen kann. Stellen Sie sich vor, es wären 250 Kunden mit insgesamt
-3287 Web-Präsenzen gewesen, von denen manche gelöscht sind und manche vorhanden.
-Von Hand eine Aufgabe von mehreren Tagen...
+Glückwunsch, Sie haben die Wiederholung zum Thema Skripting gemeistert! Ich hoffe, es hat ein wenig Spaß gemacht.
 
 ### Her(t)zlichen Glückwunsch!
 J. Seyfried
