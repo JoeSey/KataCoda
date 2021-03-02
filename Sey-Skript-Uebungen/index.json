@@ -1,0 +1,42 @@
+{ 
+  "title": "Übungen Skripting in Linux",
+  "description": "Linux-Übungen Seyfried/Systemtechnik Heinrich-Hertz-Schule Karlsruhe",
+  "difficulty": "Beginner",
+  "time": "90 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Schritt 1: Fehlersuche",
+        "text": "step1.md"
+      },
+      {
+        "title": "Schritt 2 Vergleiche",
+        "text": "step2.md"
+      },
+      {
+        "title": "Schritt 3 Vergleiche II",
+        "text": "step3.md"
+      },
+      {
+        "title": "Schritt 4 Ausgabe+Parameter",
+        "text": "step4.md"
+      },
+      {
+        "title": "Schritt 5: Zusatzaufgaben",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
