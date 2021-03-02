@@ -22,5 +22,5 @@ echo "Mein erster Parameter ist: $1"
 
 Los geht's!
 
-Für die Teilaugbane b) sollten Sie noch wissen, dass in der Spezial-Variable ``$#`` die Anzahl
+Für die Teilaufgabe b) sollten Sie noch wissen, dass in der Spezial-Variable ``$#`` die Anzahl
 der übergebenen Parameter steckt.

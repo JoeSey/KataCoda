@@ -5,6 +5,7 @@ Für das Verständnis dieser Aufgaben brauchen Sie wahrscheinlich das passende
 
 ## Aufgabe 1 - Fehlersuche
 Das folgende Skript soll von 5 auf 1 zählen. Korrigieren Sie alle Fehler:
+
 ``$!/bin/bash
 for i in 1 2 3 4 5 do
    System.out.println $1

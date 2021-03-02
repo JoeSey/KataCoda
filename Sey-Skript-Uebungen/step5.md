@@ -2,7 +2,7 @@
 Diese Aufgabe ist nur für die Linux-Profis. Sie ist auf dem Aufgabenblatt auf der zweiten Seite.
 
 Beispiel:
-`` bulkmail Klaus Hans Martin Fritz```
+``bulkmail Klaus Hans Martin Fritz``
 
 *Klaus* ist der Absender. Alles, was danach kommt, sind die Empfänger.
 
