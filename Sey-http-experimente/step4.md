@@ -1,34 +1,14 @@
-## Berechtigungen vergeben
-Nun wird es "ernst". Wir beginnen mit dem Verzeichnis `vertraege`.
-Hier sollen die Anwälte Vollzugriff haben, alle anderen Lesezugriff. 
-Berchtigungsvergaben unter Unix bestehen immer aus zwei Schritten:
+## Zusatzaufgaben
+Alles, was nun folgt, ist die "Kür" nach dem Pflichtteil. Sie können sich nun
+gerne in Teams koordinieren und gemeinsam eine Lösung erarbeiten.
 
-### Benutzer/Gruppen zuweisen
-Als erstes ändern wir die Eigentümer-Gruppe des Verzeichnisses auf *anwalt*.
-Der Zustand vorher ist:
+# Daten an Webserver schicken und speichern
+Senden Sie einen "Messwert" an Ihren Webserver und speichern Sie diesen dort ab.
+Der Messwert ist unter einer URL abzurufen (z.B. /read.php) und unter einer
+anderen abzulegen (z.B. /save.php). Der letzte Messwert wird immer überschrieben,
+Sie müssen also keine fancy Datenbank-Anwendung fabrizieren.
 
-`ls -l /home/kanzlei`{{execute}}
+## telnet ist nicht genug
+Zum Absenden von Datenwerten an den Webserver eignet sich telnet nur bedingt. Eventuell
+könnte `curl` hier besser funktionieren.
 
-...nun soll der Gruppen-Eigentümer geändert werden auf *anwalt*. Dies geschieht
-zum Beispiel mit diesem Befehl:
-
-`chgrp anwalt vertraege`{{execute}}
-
-Was ist passiert?
-
-`ls -l /home/kanzlei`{{execute}}
-
-Jetzt fehlt für den neuen Eigentümer noch das erweiterte Schreibrecht. Dies setzen
-wir mit
-
-`chmod g+w vertraege`{{execute}}
-
-...und vergleichen genau den Vorher- und Nachher-Zustand:
-
-`ls -l /home/kanzlei`{{execute}}
-
-Versuchen Sie es! Loggen Sie sich auf einem neuen Terminal als einer der beiden
-Anwalts-Accounts ein (`su adam`) und legen Sie eine neue Datei an. Zum Beispiel mit 
-`echo "Das ist wichtig" > /home/kanzlei/vertraege/mein.txt`{{execute}}.
-
-Zurück im ersten Terminal kümmern Sie sich um die anderen Verzeichnisse.

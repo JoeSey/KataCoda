@@ -1,21 +1,18 @@
-# Übungen Benutzer in Linux
-Heute soll ein kleines Szenario in Linux erstellt werden: vier Benutzer mit einem 
-gemeinsamen Verzeichnis, in dem unterschiedliche Benutzergruppen unterschiedliche
-Berechtigungen haben sollen.
+# http "von Hand"
+Um zu verstehen, wie man Informationen im Netz von einem System zu einem anderen 
+transportieren kann, ist es hilfreich, selbstverständliche Aktionen im Internet
+einmal "von Hand" nachzuvollziehen.
 
-## Benutzer anlegen
-Benutzer legen wir an mit `adduser`. Es sollen die Benutzer adam, berta, charlie
-und donald angelegt werden. Dies machen wir mit
-`adduser adam`{{execute}}
-...danach muss ein Passwort vergeben werden und einige zusätzliche Informationen.
+## Browser im Terminal
+Wir benutzen den Befehl "telnet", um uns auf einen Webserver zu verbinden. Worfür ist
+der Befehl `telnet` ursprünglich entwickelt worden?
 
-Diese Benutzer kann man, sobald sie angelegt sind, gleich testen: Am besten macht
-man dazu ein neues Terminal auf (mit dem weißen Plus-Symbol neben der Überschrift
-"Terminal"). Dann kann man in den neuen Account wechseln mit
-`su adam`{{execute}}
-und überprüfen, welchen Account man benutzt mit einem
-`whoami`{{execute}}
+Verbinden wir uns nun auf einen Webserver mit diesem Befehl:
+`telnet google.de 80`{{execute}}
+Recherchieren Sie nun im Internet, wie Sie von einem Webserver über das
+Hypertext Transfer Protocol eine Datei abrufen kann (oder, einfacher einfach 
+das Stammverzeichnis /)
 
-### Restliche Benutzer
-Legen Sie nun die Benutzer berta, charlie und donald an. Danach geht es weiter mit
-den Benutzergruppen:
+## ...und jetzt gezielt
+Rufen Sie nun mit telnet die folgende URL ab:
+http://www.hhs.karlsruhe.de/static/sey/index.html
