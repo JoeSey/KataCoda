@@ -8,10 +8,16 @@ Damit wir mit dem Browser http**s** ausprobieren können, muss zunächst einmal
 mit 
 
 `apt install apache2`{{execute}}
+
+Oops, falls Sie eine oder mehrere Fehlermeldungen bekommen haben: was müssen
+Sie vor jedem apt-Befehl zunächst aufrufen?
+
+Falls Sie etwas googeln wollen: die Paketlisten müssten neu heruntergeladen werden!
+
 Verbinden Sie sich nun mit dem Browser auf Ihren Server.
 
 ## ...und nun SSL aktivieren
 Das aktivieren von SSL in Apache ist denkbar einfach (dies sicher zum Laufen
 zu bekommen, dafür um so mehr. Aber eins nach dem anderen):
 
-`a2enmod ssl`{execute}
+`a2enmod ssl`{{execute}}
