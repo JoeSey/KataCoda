@@ -1,8 +1,8 @@
 { 
-  "title": "Übungen http",
+  "title": "Übungen https",
   "description": "Linux-Übungen Seyfried/LBTL4/CPS Heinrich-Hertz-Schule Karlsruhe",
   "difficulty": "Intermediate",
-  "time": "75 minutes",
+  "time": "80 minutes",
   "details": {
     "steps": [
       {
